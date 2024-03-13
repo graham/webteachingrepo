@@ -1,4 +1,5 @@
     <html>
+
         <style>
             .page {
                 display: flex;
@@ -37,6 +38,10 @@
                 background-color: yellow;
             }
 
+            .left-side:hover {
+                background-color: red;
+            }
+
             .right-side {
                 display: flex;
                 flex-grow: 1;
@@ -49,7 +54,8 @@
 
         <body>
 
-        <div class="page">
+        <div id="main" class="page">
+
             <div class="topbar">
                 <a href="#">Home</a>
                 <a href="#">Links</a>
@@ -69,10 +75,30 @@
                     finibus massa.
 
                 </div>
-        </div>
-            
+            </div>
+
         </div>
             
 
         </body>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                console.log("Page has loaded");
+            });
+
+            let de = document.getElementsByClassName('page')[0];
+            de.addEventListener('mouseenter', () => {
+                de.style.border = 'thick solid #0000FF';
+            });
+
+            de.addEventListener('mouseenter', () => {
+                de.style.backgroundColor = 'lightgreen';
+            });
+
+            de.addEventListener('mouseleave', () => {
+                de.style.border = 'thick solid #FFFFFF';
+            })
+        </script>
+
     </html>
