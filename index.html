@@ -1,0 +1,78 @@
+    <html>
+        <style>
+            .page {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                
+                background-color: grey;
+                font-size: 40px;
+
+                flex-direction: column;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+            }
+
+            .topbar {
+                display: flex;
+                height: 160px;
+                width: 100%;
+                background-color: green;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .topbar > a {
+                color: white;
+            }
+
+            .left-side {
+                display: flex;
+                width: 240px;
+                flex-shrink: 0;
+                background-color: yellow;
+            }
+
+            .right-side {
+                display: flex;
+                flex-grow: 1;
+                background-color: lightgreen;
+                overflow-y: scroll;
+            }
+
+
+        </style>
+
+        <body>
+
+        <div class="page">
+            <div class="topbar">
+                <a href="#">Home</a>
+                <a href="#">Links</a>
+                <div> logout </div>
+            </div>
+
+            <div class="container">
+                <div class="left-side">Left</div>
+                <div class="right-side">
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit. Curabitur viverra eget dolor sit amet accumsan. 
+                    Fusce non dui blandit, vestibulum tellus vel, iaculis 
+                    est. Nunc maximus at metus at molestie. Praesent ut 
+                    ultrices nisl. Sed dignissim convallis pellentesque.
+                    Mauris finibus dictum ex vel finibus. Duis quis 
+                    finibus massa.
+
+                </div>
+        </div>
+            
+        </div>
+            
+
+        </body>
+    </html>
